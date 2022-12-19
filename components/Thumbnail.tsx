@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { Movie } from '../typings'
 
 interface Props {
+    movie: Movie
     // movie: Movie | DocumentData
-movie: Movie
 }
 
 function Thumbnail({ movie }: Props) {

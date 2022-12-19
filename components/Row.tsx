@@ -5,8 +5,8 @@ import { useRef, useState } from 'react'
 
 interface Props {
     title: string
-    // movie: Movie | DocumentData[]
     movies: Movie[]
+    // movie: Movie | DocumentData[]
 }
 
 function Row({ title, movies }: Props) {
@@ -28,7 +28,6 @@ function Row({ title, movies }: Props) {
             console.log(rowRef.current!.scrollLeft, rowRef.current!.clientWidth)
         }
     }
-
 
     return (
         <div className="h-40 space-y-0.5 md:space-y-2">
